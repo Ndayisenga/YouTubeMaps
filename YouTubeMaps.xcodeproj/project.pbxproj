@@ -3,19 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50331DE4A7BED285EA0FCE7C /* Pods_YouTubeMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4555F23A3D535A7E3D70BFEF /* Pods_YouTubeMaps.framework */; };
+		C21851E826418151004AED24 /* GooglePlacesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21851E726418151004AED24 /* GooglePlacesManager.swift */; };
 		C253CE6526416FBA0039788A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C253CE6426416FBA0039788A /* AppDelegate.swift */; };
 		C253CE6726416FBA0039788A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C253CE6626416FBA0039788A /* SceneDelegate.swift */; };
 		C253CE6926416FBA0039788A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C253CE6826416FBA0039788A /* ViewController.swift */; };
 		C253CE6C26416FBA0039788A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C253CE6A26416FBA0039788A /* Main.storyboard */; };
 		C253CE6E26416FBC0039788A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C253CE6D26416FBC0039788A /* Assets.xcassets */; };
 		C253CE7126416FBC0039788A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C253CE6F26416FBC0039788A /* LaunchScreen.storyboard */; };
+		C253CE79264171AE0039788A /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C253CE78264171AE0039788A /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1967FD51DDB7C9F7932CE29C /* Pods-YouTubeMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTubeMaps.debug.xcconfig"; path = "Target Support Files/Pods-YouTubeMaps/Pods-YouTubeMaps.debug.xcconfig"; sourceTree = "<group>"; };
+		4555F23A3D535A7E3D70BFEF /* Pods_YouTubeMaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YouTubeMaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFB3B6C09416CEB6B3FA39A8 /* Pods-YouTubeMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTubeMaps.release.xcconfig"; path = "Target Support Files/Pods-YouTubeMaps/Pods-YouTubeMaps.release.xcconfig"; sourceTree = "<group>"; };
+		C21851E726418151004AED24 /* GooglePlacesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesManager.swift; sourceTree = "<group>"; };
 		C253CE6126416FBA0039788A /* YouTubeMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTubeMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C253CE6426416FBA0039788A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C253CE6626416FBA0039788A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,7 @@
 		C253CE6D26416FBC0039788A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C253CE7026416FBC0039788A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C253CE7226416FBC0039788A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C253CE78264171AE0039788A /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50331DE4A7BED285EA0FCE7C /* Pods_YouTubeMaps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23C2896F6B23EFA594AF101C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1967FD51DDB7C9F7932CE29C /* Pods-YouTubeMaps.debug.xcconfig */,
+				AFB3B6C09416CEB6B3FA39A8 /* Pods-YouTubeMaps.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C253CE5826416FBA0039788A = {
 			isa = PBXGroup;
 			children = (
 				C253CE6326416FBA0039788A /* YouTubeMaps */,
 				C253CE6226416FBA0039788A /* Products */,
+				23C2896F6B23EFA594AF101C /* Pods */,
+				EF16B62498A0001F1077816B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +83,18 @@
 				C253CE6D26416FBC0039788A /* Assets.xcassets */,
 				C253CE6F26416FBC0039788A /* LaunchScreen.storyboard */,
 				C253CE7226416FBC0039788A /* Info.plist */,
+				C253CE78264171AE0039788A /* ResultsViewController.swift */,
+				C21851E726418151004AED24 /* GooglePlacesManager.swift */,
 			);
 			path = YouTubeMaps;
+			sourceTree = "<group>";
+		};
+		EF16B62498A0001F1077816B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4555F23A3D535A7E3D70BFEF /* Pods_YouTubeMaps.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C253CE7526416FBC0039788A /* Build configuration list for PBXNativeTarget "YouTubeMaps" */;
 			buildPhases = (
+				E41D502139FD69808E32ABDD /* [CP] Check Pods Manifest.lock */,
 				C253CE5D26416FBA0039788A /* Sources */,
 				C253CE5E26416FBA0039788A /* Frameworks */,
 				C253CE5F26416FBA0039788A /* Resources */,
+				A25BEA950BF9E9CFFB146494 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +164,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A25BEA950BF9E9CFFB146494 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YouTubeMaps/Pods-YouTubeMaps-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YouTubeMaps/Pods-YouTubeMaps-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YouTubeMaps/Pods-YouTubeMaps-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E41D502139FD69808E32ABDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YouTubeMaps-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C253CE5D26416FBA0039788A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +214,8 @@
 				C253CE6926416FBA0039788A /* ViewController.swift in Sources */,
 				C253CE6526416FBA0039788A /* AppDelegate.swift in Sources */,
 				C253CE6726416FBA0039788A /* SceneDelegate.swift in Sources */,
+				C253CE79264171AE0039788A /* ResultsViewController.swift in Sources */,
+				C21851E826418151004AED24 /* GooglePlacesManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +359,7 @@
 		};
 		C253CE7626416FBC0039788A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1967FD51DDB7C9F7932CE29C /* Pods-YouTubeMaps.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +379,7 @@
 		};
 		C253CE7726416FBC0039788A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFB3B6C09416CEB6B3FA39A8 /* Pods-YouTubeMaps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

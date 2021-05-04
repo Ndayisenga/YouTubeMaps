@@ -4,7 +4,7 @@
 //
 //  Created by Ndayisenga Jean Claude on 04/05/2021.
 //
-
+import GooglePlaces
 import UIKit
 
 @main
@@ -13,7 +13,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        GMSPlacesClient.provideAPIKey("AIzaSyDmGJzwUkKhjrLb1ZJ6csyrRSyn47Teu6w")
+        
         return true
     }
 
